@@ -2,120 +2,151 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Queen Sayema 🌸</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Good Morning, My Love</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Quicksand', sans-serif;
-      background: radial-gradient(circle at top left, #ffe4e6, #fffafc);
+    ::selection {
+      background-color: #d8b4fe;
+      color: #4c1d95;
     }
-    .great-vibes {
-      font-family: 'Great Vibes', cursive;
+    /* Floating Hearts */
+    .heart {
+      position: fixed;
+      bottom: -50px;
+      width: 30px;
+      height: 30px;
+      background: url('data:image/svg+xml;utf8,<svg fill="pink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3 9.24 3 10.91 3.81 12 5.08 13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>') no-repeat center center;
+      background-size: contain;
+      animation: floatUp 6s linear forwards;
+      opacity: 0.7;
+      pointer-events: none;
+      z-index: 9999;
     }
-    @keyframes float {
-      0% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-      100% { transform: translateY(0); }
-    }
-    .float {
-      animation: float 3s ease-in-out infinite;
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .fade-in-up {
-      animation: fadeInUp 1.2s ease forwards;
-    }
-    @keyframes pulseGlow {
-      0%, 100% { box-shadow: 0 0 10px rgba(255, 0, 98, 0.3); }
-      50% { box-shadow: 0 0 20px rgba(255, 0, 98, 0.6); }
-    }
-    .pulse-glow {
-      animation: pulseGlow 2s infinite;
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.7;
+      }
+      100% {
+        transform: translateY(-600px) scale(1.5);
+        opacity: 0;
+      }
     }
   </style>
 </head>
-<body class="text-gray-800">
+<body class="bg-gradient-to-tr from-purple-100 via-purple-200 to-pink-100 min-h-screen text-center px-4 py-10 overflow-y-auto">
 
-  <div class="min-h-screen flex flex-col items-center justify-center px-4 py-10">
-    <!-- Header Heart and Title -->
-    <div class="text-center fade-in-up">
-      <div class="text-pink-400 text-7xl mb-4 great-vibes float">❤️</div>
-      <h1 class="text-5xl font-bold text-pink-600 mb-2">Good Morning, Sayema</h1>
-      <p class="text-lg text-gray-600">My sweetest wife, my reason to smile every single day 🌞</p>
+  <div class="flex flex-col items-center justify-start max-w-7xl mx-auto w-full">
+    <h1 class="text-5xl md:text-6xl font-bold text-purple-700 mb-4 animate-pulse">Good Morning, My Love 🌞</h1>
+    <p class="text-2xl text-gray-700 mb-8 italic max-w-3xl">No matter the language, no matter the place, my love for you stays the same. Here's how I say "I love you, সেতু" all over the world. Click 🔊 to hear them.</p>
+
+    <div id="cards" class="w-full max-w-6xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+      <!-- Cards will be inserted here -->
     </div>
 
-    <!-- Sections -->
-    <div class="mt-12 w-full max-w-3xl space-y-10">
+    <p class="mt-12 text-lg text-gray-600 max-w-xl">I love you in every language, but your name stays সেতু — the bridge to my heart. ❤️</p>
 
-      <!-- Sweet Moments -->
-      <section class="bg-white rounded-2xl shadow-xl p-6 fade-in-up">
-        <h2 class="text-2xl text-pink-500 font-semibold mb-2">✨ Sweet Morning Thought</h2>
-        <p>
-          When I open my eyes, I don't just see the light — I feel the warmth of your love wrapped around my heart. You are the melody to my morning.
-        </p>
-      </section>
-
-      <!-- Animated Compliments -->
-      <section class="bg-gradient-to-r from-pink-100 to-pink-50 rounded-2xl shadow-md p-6 fade-in-up">
-        <h2 class="text-2xl text-pink-500 font-semibold mb-2">🌼 Things I Love About You</h2>
-        <ul class="list-disc list-inside space-y-1 animate-pulse text-gray-700">
-          <li>Your caring voice</li>
-          <li>The magic in your smile</li>
-          <li>The way you love deeply</li>
-          <li>How you say "Kutta,Janoar,Badop 🥺</li>
-        </ul>
-      </section>
-
-      <!-- Beautiful Image Section -->
-      <section class="bg-white rounded-2xl shadow-lg p-6 fade-in-up">
-        <h2 class="text-2xl text-pink-500 font-semibold mb-4">📸 A Beautiful Memory Together</h2>
-        <div class="rounded-xl overflow-hidden shadow-md">
-          <img src="https://i.postimg.cc/gr9SSBy5/Whats-App-Image-2025-05-18-at-09-30-11-707809f1.jpg" alt="Us together" class="w-full object-cover max-h-[500px] mx-auto rounded-lg transition-transform duration-500 hover:scale-105" />
-        </div>
-        <p class="mt-4 text-center text-gray-600 italic">Every time I see this photo, I fall in love with you all over again.</p>
-      </section>
-
-      <!-- Apology Section -->
-      <section class="bg-rose-50 border-l-4 border-rose-300 p-6 rounded-2xl shadow-md fade-in-up pulse-glow">
-        <h2 class="text-2xl text-rose-500 font-semibold mb-3">💔 I’m So Sorry, My Love</h2>
-        <p class="text-gray-700">
-          Sayema, I know I haven’t always been the man you deserve. You feel unheard, unloved, and overlooked. That breaks my heart more than I can ever say.
-        </p>
-        <p class="mt-2 text-gray-700">
-          I want you to know from the depth of my soul — I love you more than life itself. You are not just a priority, you are my everything. I’m learning, I’m growing, and I’m here to prove it with actions, not just words.
-        </p>
-        <p class="mt-4 text-center text-xl text-rose-600 font-semibold">Will you forgive me and let me hold your heart again? 💖</p>
-      </section>
-
-      <!-- Animated Heartbeat Section -->
-      <section class="bg-white rounded-2xl shadow-lg p-6 fade-in-up">
-        <h2 class="text-2xl text-pink-500 font-semibold mb-2">💓 My Heartbeat</h2>
-        <div class="flex justify-center mt-4">
-          <div class="w-20 h-20 bg-pink-300 rounded-full animate-ping"></div>
-        </div>
-        <p class="text-center mt-4">Every beat of my heart says: I love you, Sayema.</p>
-      </section>
-
-      <!-- Forever Section -->
-      <section class="bg-gradient-to-br from-rose-100 to-white rounded-2xl shadow-md p-6 fade-in-up">
-        <h2 class="text-2xl text-pink-500 font-semibold mb-2">🕊️ Our Forever</h2>
-        <p>
-          From this morning to every day ahead, I vow to bring joy to your life, hold your hand through storms, and be the reason your mornings start with peace.
-        </p>
-      </section>
-
-    </div>
-
-    <!-- Footer -->
-    <footer class="text-center mt-16 fade-in-up">
-      <p class="text-pink-400">With endless love,</p>
-      <p class="great-vibes text-4xl text-pink-600">— Your Husband 💑</p>
+    <footer class="mt-10 text-sm text-gray-400">
+      Made with 💜 just for you, Shetu (সেতু)
     </footer>
   </div>
 
+  <!-- Background Music -->
+  <audio id="bg-music" loop autoplay>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/27/audio_28a69ef229.mp3?filename=romantic-piano-1146.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    // Floating hearts creation
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.style.left = Math.random() * window.innerWidth + 'px';
+      heart.style.animationDuration = (4 + Math.random() * 3) + 's';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 6000);
+    }
+    setInterval(createHeart, 500);
+
+    const phrases = [
+      { lang: "English", text: "I love you, সেতু", voiceLang: "en-US" },
+      { lang: "Spanish", text: "Te amo, সেতু", voiceLang: "es-ES" },
+      { lang: "French", text: "Je t'aime, সেতু", voiceLang: "fr-FR" },
+      { lang: "German", text: "Ich liebe dich, সেতু", voiceLang: "de-DE" },
+      { lang: "Italian", text: "Ti amo, সেতু", voiceLang: "it-IT" },
+      { lang: "Portuguese", text: "Eu te amo, সেতু", voiceLang: "pt-PT" },
+      { lang: "Arabic", text: "أحبك يا সেতু", voiceLang: "ar-SA" },
+      { lang: "Hindi", text: "मैं तुमसे प्यार करता हूँ, সেতু", voiceLang: "hi-IN" },
+      { lang: "Bengali", text: "আমি তোমায় ভালোবাসি, সেতু", voiceLang: "bn-BD" },
+      { lang: "Chinese", text: "我爱你，সেতু", voiceLang: "zh-CN" },
+      { lang: "Japanese", text: "愛してるよ、সেতু", voiceLang: "ja-JP" },
+      { lang: "Korean", text: "사랑해요, সেতু", voiceLang: "ko-KR" },
+      { lang: "Russian", text: "Я тебя люблю, সেতু", voiceLang: "ru-RU" },
+      { lang: "Turkish", text: "Seni seviyorum, সেতু", voiceLang: "tr-TR" },
+      { lang: "Greek", text: "Σ' αγαπώ, সেতু", voiceLang: "el-GR" },
+      { lang: "Hebrew", text: "אני אוהב אותך, סেতו", voiceLang: "he-IL" },
+      { lang: "Thai", text: "ฉันรักคุณ, สেতุ", voiceLang: "th-TH" },
+      { lang: "Vietnamese", text: "Anh yêu em, সেতু", voiceLang: "vi-VN" },
+      { lang: "Filipino", text: "Mahal kita, সেতু", voiceLang: "fil-PH" },
+      { lang: "Swahili", text: "Nakupenda, সেতু", voiceLang: "sw" },
+      { lang: "Norwegian", text: "Jeg elsker deg, সেতু", voiceLang: "no-NO" },
+      { lang: "Dutch", text: "Ik hou van jou, সেতু", voiceLang: "nl-NL" },
+      { lang: "Polish", text: "Kocham cię, সেতু", voiceLang: "pl-PL" },
+      { lang: "Swedish", text: "Jag älskar dig, সেতু", voiceLang: "sv-SE" }
+    ];
+
+    const container = document.getElementById("cards");
+
+    function createCard({ lang, text, voiceLang }) {
+      const card = document.createElement("div");
+      card.className = "bg-white rounded-xl shadow-lg p-5 transition hover:shadow-xl";
+
+      const title = document.createElement("h2");
+      title.className = "text-lg font-bold text-purple-700";
+      title.innerText = lang;
+
+      const phraseText = document.createElement("p");
+      phraseText.className = "text-gray-700 my-2";
+      phraseText.innerText = text;
+
+      const btn = document.createElement("button");
+      btn.className = "mt-2 bg-purple-500 text-white px-4 py-1 rounded-lg hover:bg-purple-600 transition";
+      btn.innerText = "🔊 Pronounce";
+
+      btn.onclick = () => {
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = voiceLang;
+
+        // Match voice for better pronunciation if available
+        const voices = speechSynthesis.getVoices();
+        const match = voices.find(v => v.lang.toLowerCase().startsWith(voiceLang.toLowerCase()));
+        if (match) utterance.voice = match;
+
+        speechSynthesis.cancel();
+        speechSynthesis.speak(utterance);
+      };
+
+      card.appendChild(title);
+      card.appendChild(phraseText);
+      card.appendChild(btn);
+      container.appendChild(card);
+    }
+
+    function init() {
+      // Voices may load asynchronously
+      speechSynthesis.onvoiceschanged = () => {
+        container.innerHTML = "";
+        phrases.forEach(createCard);
+      };
+
+      if (speechSynthesis.getVoices().length) {
+        phrases.forEach(createCard);
+      }
+    }
+
+    init();
+  </script>
 </body>
 </html>
